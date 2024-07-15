@@ -27,7 +27,8 @@ public class Event {
 
     @Column(name = "event_date")
     private Timestamp eventDate;
-
+    
+    //joining of table by using joincolumn anotation
     @ManyToOne
     @JoinColumn(name = "hall_id")
     private Hall hall;
